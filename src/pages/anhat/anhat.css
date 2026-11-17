@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.divfirsttexts {
+    display: flex;
+    gap: 30px;
+}
+
+.divfirsttexts a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.firstselect select {
+    width: 150px;
+    border: none;
+    padding: 10px;
+}
+
+.secondselect select {
+    width: 150px;
+    border: none;
+    padding: 10px;
+}
+
+.divselect {
+    display: flex;
+    gap: 30px;
+}
+
+.divendheader {
+    display: flex;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 100px;
+}
+
+.divforevocabankh1 .evocah1 {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 50px;
+}
+
+.divtextsmnacaclinker {
+    display: flex;
+    padding-top: 20px;
+    gap: 45px;
+}
+
+.divtextsmnacaclinker a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnevocaonline {
+    background-color: #6400dc;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.divhencheaderitakic {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.divhipoteqayinvarker {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: lightgray;
+    width: 100%;
+    height: 550px;
+    border-radius: 0 0 0 150px;
+}
+
+.btnimanalavelin {
+    background-color: #6400dc;
+    padding: 15px;
+    color: white;
+    width: 180px;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.divhpimejitexter {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.divhpinkar {
+    display: flex;
+    align-items: center;
+}
+
+.qrcodeimg {
+    width: 200px;
+}
+
+.divqrcodeevocatouch {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.divtextsqrcodeiny,
+.divtexts1qrcode {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.divtexts2qrcode {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.divqarterarcaclassic {
+    background-color: lightgray;
+    width: 100%;
+    height: 550px;
+    border-radius: 150px 150px 0 0;
+}
+
+.imgkoxiqarter {
+    width: 170px;
+}
+
+.divkoxiqarter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.divqarterarcaclassic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.mejtexiqart {
+    width: 400px;
+}
+
+.btnmanramasn {
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    background-color: #6400dc;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.divmejtexqiqartimasin {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.divonlineyevmobaylbanking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: #6400dc;
+    width: 100%;
+    height: 550px;
+}
+
+.imgnoutbook,
+.imgheraxos {
+    border: 3px solid;
+}
+
+.div2imgheraxosnoutbook {
+    display: flex;
+    gap: 50px;
+}
+
+.forwhitetext {
+    color: white;
+}
+
+.divonlinemobayltexts {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.textsonlinemobayl {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divqrcodeappstore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.divverjinnorutyunner {
+    background-color: lightgray;
+    width: 100%;
+    height: 700px;
+    border-radius: 0 0 150px 150px;
+}
+
+.btnbolornorutyunnery {
+    background-color: #6400dc;
+    width: 250px;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.divuxakitextihamar {
+    display: flex;
+    gap: 500px;
+}
+
+.divnkar1,
+.divnkar2,
+.divnkar3 {
+    border-radius: 30px;
+    background-color: white;
+    width: 439px;
+    height: 500px;
+}
+
+.imgnkarnerforall {
+    border-radius: 30px 30px 0 0;
+}
+
+.divforspitakivritext {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pfordata {
+    color: gray;
+}
+
+.divskzbi3 {
+    display: flex;
+    gap: 30px;
+}
+
+.divverjinnorutyunner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.divfooteriskizb {
+    background-color: white;
+    width: 100%;
+    height: 550px;
+}
+
+.evocabankh1verjin {
+    text-transform: uppercase;
+    color: gray;
+}
+
+.pforgraytext {
+    color: gray;
+}
+
+.div1gic {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.divgic2,
+.divgic3,
+.divgic4,
+.divgic5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divfooteriskizb {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.verjingicguyn {
+    color: blue;
+}
+
+.verjindiv{
+    background-color: lightgray;
+    width: 100%;
+    height: 150px;
+}
+
+.verjindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
