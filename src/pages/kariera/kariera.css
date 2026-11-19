@@ -1,0 +1,416 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.evoca-page {
+  width: 100%;
+  overflow: hidden;
+  color: #252525;
+  background: white;
+}
+
+/* HEADER */
+
+.top-menu {
+  height: 52px;
+  padding: 0 3.3%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.top-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-links a {
+  font-size: 11px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top-links .active {
+  color: #6500dc;
+  font-weight: bold;
+  border-top: 4px solid #6500dc;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 0 3.3%;
+  gap: 35px;
+}
+
+.evoca-logo {
+  font-size: 39px;
+  color: #777;
+  letter-spacing: -3px;
+}
+
+.evoca-logo span {
+  color: #6500dc;
+}
+
+.header-links {
+  display: flex;
+  gap: 25px;
+}
+
+.header-links a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.header-links a:first-child {
+  color: #6500dc;
+}
+
+.online-button {
+  margin-left: auto;
+  padding: 12px 24px;
+  color: white;
+  background: #6500dc;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* PURPLE MENU */
+
+.purple-menu {
+  height: 40px;
+  background: #6500dc;
+  display: flex;
+  align-items: center;
+  padding: 0 3.3%;
+}
+
+.purple-menu a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.purple-menu .selected {
+  background: #4e00a8;
+}
+
+/* HERO IMAGE */
+
+.hero-section {
+  width: 100%;
+  height: 440px;
+  position: relative;
+  background: #f5a0bd;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-card {
+  position: absolute;
+  left: 3.3%;
+  bottom: -85px;
+  width: 465px;
+  min-height: 200px;
+  padding: 35px 45px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 5px 20px #00000010;
+}
+
+.hero-card h1 {
+  font-size: 27px;
+  margin-bottom: 22px;
+}
+
+.hero-card p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #444;
+}
+
+/* WHY EVOCA */
+
+.why-section {
+  padding: 180px 8% 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.why-text {
+  max-width: 500px;
+}
+
+.purple-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6500dc;
+  letter-spacing: 2px;
+}
+
+.why-text h2,
+.culture-section h2,
+.videos-section h2 {
+  font-size: 35px;
+  margin: 22px 0;
+}
+
+.why-text p,
+.culture-section p {
+  font-size: 15px;
+  line-height: 2;
+  color: #777;
+}
+
+.why-image {
+  width: 48%;
+  max-width: 530px;
+  display: block;
+  object-fit: cover;
+}
+
+/* CULTURE */
+
+.culture-section {
+  background: #f8f6fb;
+  padding: 90px 12%;
+  text-align: center;
+}
+
+.culture-section p {
+  max-width: 780px;
+  margin: auto;
+}
+
+/* VIDEOS */
+
+.videos-section {
+  padding: 90px 7%;
+  text-align: center;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.video-card {
+  text-align: left;
+  border: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.video-placeholder {
+  height: 190px;
+  background: linear-gradient(135deg, #edc1db, #6500dc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder span {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #6500dc;
+  font-size: 22px;
+}
+
+.video-card h3 {
+  font-size: 14px;
+  padding: 18px;
+  line-height: 1.6;
+}
+
+/* EMPLOYEES */
+
+.employees-section {
+  padding: 90px 8%;
+  text-align: center;
+  background: #f8f6fb;
+}
+
+.employees-section h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 25px 0 45px;
+}
+
+.employees-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.employee-card {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.employee-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px #00000010;
+}
+
+.employee-words {
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.employee-words span {
+  color: #6500dc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.employee-card h3 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.employee-card p {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+
+.evoca-footer {
+  padding: 35px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evoca-footer p {
+  font-size: 11px;
+  color: #888;
+}
+
+/* CHAT */
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 10;
+  background: #6500dc;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+  .top-links {
+    overflow-x: auto;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .top-links a {
+    white-space: nowrap;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .purple-menu {
+    overflow-x: auto;
+  }
+
+  .why-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-image {
+    width: 100%;
+  }
+
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .employees-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 500px) {
+  .hero-section {
+    height: 360px;
+  }
+
+  .hero-card {
+    left: 4%;
+    width: 92%;
+    bottom: -100px;
+    padding: 25px;
+  }
+
+  .why-section {
+    padding-top: 150px;
+  }
+
+  .videos-grid,
+  .employees-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evoca-footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
