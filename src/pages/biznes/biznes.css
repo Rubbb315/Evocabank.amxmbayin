@@ -1,0 +1,614 @@
+.evoca-biznes-page {
+  --purple-primary: #6d18d8;
+  --purple-dark: #4f0ca8;
+  --purple-soft: #ebe2fb;
+  --purple-btn-bg: #ece4fc;
+  --purple-btn-hover: #dfd2fa;
+  --text-dark: #181520;
+  --text-muted: #5d586b;
+  --border-light: #e9e6f0;
+  --bg-page: #ffffff;
+  --bg-footer: #f5f5f7;
+  --bg-disclaimer: #e4e4e7;
+
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  font-family: "Noto Sans Armenian", "DejaVu Sans", Arial, sans-serif;
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+
+.evoca-biznes-page .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Top Utility Bar */
+.top-utility-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #f0eef5;
+  font-size: 12px;
+  color: #3c3748;
+}
+
+.top-utility-inner {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top-utility-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.top-utility-link {
+  background: none;
+  border: none;
+  padding: 6px 0;
+  font-size: 12px;
+  color: #3c3748;
+  cursor: pointer;
+}
+
+.top-utility-link.is-active {
+  color: var(--purple-primary);
+  font-weight: 700;
+}
+
+.top-utility-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--purple-primary);
+  font-weight: 600;
+}
+
+.utility-dropdown {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.utility-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2f2a3b;
+  font-size: 13px;
+}
+
+/* Main Header */
+.main-header {
+  background: #ffffff;
+  padding: 14px 0;
+}
+
+.main-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand-logo {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo-text {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #7c7885;
+  text-transform: lowercase;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.main-nav-item {
+  background: none;
+  border: none;
+  padding: 6px 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #181520;
+  cursor: pointer;
+}
+
+.main-nav-item.is-active {
+  color: var(--purple-primary);
+}
+
+.evoca-online-btn {
+  background-color: var(--purple-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.evoca-online-btn:hover {
+  background-color: var(--purple-dark);
+}
+
+/* Purple Sub-header Strip */
+.purple-subbar {
+  background-color: var(--purple-primary);
+}
+
+.purple-subbar-pill {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--purple-dark);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 24px;
+}
+
+/* Main Content */
+.biznes-main {
+  padding: 22px 0 64px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #6f6a7d;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #14111c;
+  margin: 0 0 36px;
+}
+
+/* Loan Cards */
+.loans-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 36px;
+  align-items: center;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.loan-card:last-child {
+  border-bottom: none;
+}
+
+.loan-image-box {
+  width: 100%;
+  height: 175px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f6f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loan-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.loan-image-fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--purple-primary);
+  background: linear-gradient(135deg, #f3ecff 0%, #e7dbfc 100%);
+}
+
+.loan-content {
+  min-width: 0;
+}
+
+.loan-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #14111c;
+  margin: 0 0 10px;
+}
+
+.loan-description {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 22px;
+  max-width: 740px;
+}
+
+/* Metrics Row */
+.loan-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 36px;
+  margin-bottom: 24px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 210px;
+}
+
+.metric-top {
+  font-size: 11px;
+  font-weight: 600;
+  color: #3e394b;
+  margin-bottom: 2px;
+}
+
+.metric-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--purple-primary);
+  line-height: 1.15;
+}
+
+.metric-bottom {
+  font-size: 11px;
+  color: #4f4a5d;
+  margin-top: 4px;
+}
+
+/* Action Button */
+.btn-details {
+  background-color: var(--purple-btn-bg);
+  color: var(--purple-primary);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-details:hover {
+  background-color: var(--purple-btn-hover);
+}
+
+.btn-chevron {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Footer */
+.biznes-footer {
+  background-color: var(--bg-footer);
+  border-top: 1px solid #e6e4ec;
+  padding-top: 22px;
+}
+
+.footer-updated {
+  text-align: right;
+  font-size: 11px;
+  color: #6f6a7d;
+  margin-bottom: 18px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1.25fr 1fr 1.15fr;
+  gap: 28px;
+  padding-bottom: 44px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #7c7885;
+  margin-bottom: 14px;
+}
+
+.footer-logo-sub {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.footer-address,
+.footer-license,
+.footer-copyright {
+  font-size: 11px;
+  color: #4a4558;
+  margin: 0 0 12px;
+}
+
+.footer-col-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #181520;
+  margin: 0 0 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #3a3547;
+}
+
+.footer-col a:hover {
+  color: var(--purple-primary);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  font-size: 15px;
+  color: #6f6a7d;
+  margin-bottom: 14px;
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.store-badge {
+  background: #141418;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.footer-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contact-links a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple-primary);
+}
+
+.footer-disclaimer-bar {
+  background-color: var(--bg-disclaimer);
+  padding: 18px 0;
+}
+
+.footer-disclaimer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-disclaimer-text {
+  margin: 0;
+  font-size: 10px;
+  color: #555063;
+  max-width: 820px;
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mini-badge {
+  background: #ffffff;
+  color: #4f4a5d;
+  border: 1px solid #d4d2dc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Floating Widgets */
+.floating-widgets {
+  position: fixed;
+  right: 18px;
+  bottom: 12px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.floating-call-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #b898f5;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(79, 12, 168, 0.25);
+}
+
+.floating-chat-btn {
+  background-color: var(--purple-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(79, 12, 168, 0.28);
+}
+
+.chat-popup {
+  width: 280px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 12px 30px rgba(24, 21, 32, 0.16);
+}
+
+.chat-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.chat-popup-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-popup-body {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Modal */
+.loan-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 17, 28, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 120;
+}
+
+.loan-modal {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.loan-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f3f0f9;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.modal-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.modal-metric-card {
+  background: #f8f5fd;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-metric-card strong {
+  color: var(--purple-primary);
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .loan-card {
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-utility-inner,
+  .main-header-inner,
+  .footer-disclaimer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .loan-card {
+    grid-template-columns: 1fr;
+    padding: 24px 0;
+  }
+
+  .loan-image-box {
+    max-width: 320px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+}
