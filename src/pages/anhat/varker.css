@@ -1,0 +1,296 @@
+:root {
+  --evoca-primary: #662d91;
+  --evoca-primary-hover: #522276;
+  --evoca-accent: #ff4d4f;
+  --evoca-bg: #f6f7f9;
+  --evoca-card-bg: #ffffff;
+  --evoca-text-dark: #1d1d24;
+  --evoca-text-muted: #6e717c;
+  --evoca-border: #e4e6ec;
+  --evoca-pill-bg: #eceef3;
+}
+
+.evoca-loans-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Armenian', Arial, sans-serif;
+  color: var(--evoca-text-dark);
+  background-color: var(--evoca-bg);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.evoca-loans-page *,
+.evoca-loans-page *::before,
+.evoca-loans-page *::after {
+  box-sizing: inherit;
+}
+
+/* Header & Breadcrumb */
+.evoca-loans-header {
+  margin-bottom: 28px;
+}
+
+.evoca-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--evoca-text-muted);
+  margin-bottom: 12px;
+}
+
+.evoca-breadcrumb-current {
+  color: var(--evoca-text-dark);
+  font-weight: 500;
+}
+
+.evoca-page-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--evoca-text-dark);
+}
+
+/* Filters */
+.evoca-filters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.evoca-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.evoca-filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--evoca-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.evoca-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.evoca-pill {
+  appearance: none;
+  border: 1px solid transparent;
+  background-color: var(--evoca-pill-bg);
+  color: var(--evoca-text-dark);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.evoca-pill:hover {
+  background-color: #dfe2ea;
+}
+
+.evoca-pill.active {
+  background-color: var(--evoca-primary);
+  color: #ffffff;
+}
+
+.evoca-currency-pill {
+  min-width: 44px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+/* Loan Cards List */
+.evoca-loans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.evoca-loan-card {
+  background-color: var(--evoca-card-bg);
+  border: 1px solid var(--evoca-border);
+  border-radius: 18px;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  box-shadow: 0 4px 16px rgba(18, 22, 33, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evoca-loan-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(18, 22, 33, 0.08);
+}
+
+.evoca-loan-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.evoca-loan-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--evoca-text-dark);
+  line-height: 1.3;
+}
+
+.evoca-loan-desc {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--evoca-text-muted);
+  margin: 0 0 22px;
+  max-width: 780px;
+}
+
+.evoca-loan-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+}
+
+.evoca-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.evoca-metric-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--evoca-primary);
+}
+
+.evoca-metric-label {
+  font-size: 13px;
+  color: var(--evoca-text-muted);
+}
+
+.evoca-loan-card-actions {
+  flex-shrink: 0;
+}
+
+.evoca-details-btn {
+  appearance: none;
+  border: none;
+  background-color: var(--evoca-primary);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.evoca-details-btn:hover {
+  background-color: var(--evoca-primary-hover);
+}
+
+.evoca-empty-state {
+  background: var(--evoca-card-bg);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  color: var(--evoca-text-muted);
+  font-size: 16px;
+}
+
+/* Modal (aranc nerqin ejeri) */
+.evoca-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 19, 28, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.evoca-modal {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 580px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.evoca-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.evoca-modal-header h3 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.evoca-modal-close {
+  border: none;
+  background: var(--evoca-pill-bg);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--evoca-text-dark);
+  flex-shrink: 0;
+}
+
+.evoca-modal-desc {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--evoca-text-muted);
+  margin: 0 0 20px;
+}
+
+.evoca-modal-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  background: var(--evoca-bg);
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.evoca-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .evoca-loan-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 22px 20px;
+  }
+
+  .evoca-details-btn {
+    width: 100%;
+  }
+
+  .evoca-loan-metrics {
+    gap: 18px 24px;
+  }
+}
