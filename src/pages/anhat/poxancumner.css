@@ -1,0 +1,22 @@
+.transfers-page {
+    min-height: 500px;
+    padding: 60px 20px;
+    background: #f5f7fa;
+}
+
+.transfers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.transfers-container h1 {
+    margin-bottom: 20px;
+    color: #172b4d;
+    font-size: 36px;
+}
+
+.transfers-container p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
